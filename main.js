@@ -12,7 +12,6 @@ const blockListDomains = [
 
 function sortDomains() {
   let s = new RegExp(domain.split("/")[2]);
-  console.log(s);
   return blockListDomains.filter((item) => item.match(s)).join();
 }
 
@@ -21,6 +20,5 @@ function checkPageUrl() {
     return alert("Доступ запрещен");
   }
 }
-console.log(checkPageUrl());
 
 // сделать модальное окно (баннер), можно посмотреть в сторону модульности и подключать отдельным html файлом
